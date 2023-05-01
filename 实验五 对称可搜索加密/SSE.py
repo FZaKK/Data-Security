@@ -115,9 +115,9 @@ if __name__ == '__main__' :
     search_word = cipher.encrypt(padword)
     search_Li = search_word[:8]
     search_Ki = f(hash_key + search_Li)
-    # print('search_Ki.digest: ', search_Ki.hexdigest()) # 这里也是对的
+    print('search_Ki.digest: ', search_Ki.hexdigest()) # 这里也是对的
     search_Ki = search_Ki.hexdigest()
-    # print(search_word) # 这里使对的
+    print('search_word: ', search_word) # 这里使对的
 
     # 搜索模块
     ans_index = []
